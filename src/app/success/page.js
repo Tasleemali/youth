@@ -29,7 +29,7 @@ export default function OrderSuccess() {
                     <p className="mt-2 font-bold">Items:</p>
                     <ul>
                         {order.items.map((item, i) => (
-                            <li key={i}>{item.name} - {item.quantity} pcs</li>
+                            <li key={i}>{item.name} - {item.qty} pcs</li>
                         ))}
                     </ul>
                 </div>
