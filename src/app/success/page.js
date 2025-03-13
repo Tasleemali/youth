@@ -1,11 +1,10 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
-import { useRouter}  from 'next/navigation'
- 
+import { useSearchParams } from "next/navigation";
 
 export default function OrderSuccess() {
-    const router = useRouter();
-    const { orderId } = router.query;
+    const searchParams = useSearchParams();
+    const orderId = searchParams.get("orderId"); // Get orderId from URL query
     const [order, setOrder] = useState(null);
 
     useEffect(() => {
