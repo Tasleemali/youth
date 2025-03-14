@@ -108,7 +108,7 @@ export async function loginAction(formData) {
         await authDB() 
          try { 
      
-             const getCookies = cookies()
+             const getCookies = await cookies()
          const token = getCookies.get('token')?.value || ''
      
      if(token=== ''){
