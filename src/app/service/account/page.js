@@ -28,7 +28,7 @@ console.log(user)
   
 return (
 
-  <div className='bg-white'>
+  <div className='bg-white  text-black'>
 <div className='mx-auto max-w-screen-xl px-5 '>
   <div className="flex flex-col  bg-white">
 {IsAuth? 
