@@ -7,7 +7,7 @@ import NewArrivalBanner from '@/components/component-ui/all-arrival-banner'
 import { GlobalContext } from '@/context'
 import { useRouter } from 'next/navigation'
 function Men() {
-  const router = useRouter
+  const router = useRouter()
   const [product, setProduct] = useState([])
   const [like, setLike] = useState(false)
    const {  query } = useContext(GlobalContext)
