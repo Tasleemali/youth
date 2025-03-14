@@ -12,7 +12,7 @@ async function logoutbtn() {
         if (result?.success) {
           alert('logout succesful')
           setIsAuth(false)
-          router.push("service/login")
+         router.push("/service/login")
         }
 }
 
